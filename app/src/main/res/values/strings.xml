@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Backing</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="app_widget_text">Example</string>
+    <string name="configure">Configure</string>
+    <string name="add_widget">Add Widget</string>
+    <string name="error">Error, Please try again</string>
+</resources>
