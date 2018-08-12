@@ -42,6 +42,7 @@ public class StepFragment extends Fragment {
     private SimpleExoPlayer simpleExoPlayer;
     private MediaSessionCompat mediaSession;
     private PlaybackStateCompat.Builder stateBuilder;
+    private Context context;
     private long position = 0;
 
     public StepFragment() {
@@ -144,6 +145,12 @@ public class StepFragment extends Fragment {
         }
         updateView();
         return view;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        initPlayer(getContext());
     }
 
     @Override
